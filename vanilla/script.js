@@ -24,8 +24,8 @@ And when the mask of make-believe
 Gave way to hearts without disguise,
 The love I dared not to conceive
 Was shining in your earthly eyes.`,
-    gradientFrom: "rgba(109, 40, 217, 0.8)",
-    gradientTo: "rgba(159, 122, 234, 0.8)",
+    gradientFrom: "rgba(76, 175, 80, 0.8)",
+    gradientTo: "rgba(46, 125, 50, 0.9)",
     publishedDate: "January 2024"
   },
   {
@@ -52,8 +52,8 @@ Hanggang ngayo'y tandang-tanda ko pa,
 Unang pagtawag, unang tawa,
 Sa piling mo, lahat ay nag-iba—
 Dahil sa 'yo, ang mundo ko'y payapa.`,
-    gradientFrom: "rgba(159, 122, 234, 0.8)",
-    gradientTo: "rgba(249, 168, 212, 0.8)",
+    gradientFrom: "rgba(56, 142, 60, 0.8)",
+    gradientTo: "rgba(129, 199, 132, 0.9)",
     publishedDate: "January 2024"
   },
   {
@@ -80,8 +80,8 @@ And so we grew—no haste, no race—
 But constant as the moonlit tide.
 Time did not dull, but gave us grace—
 To know, to trust, to never hide.`,
-    gradientFrom: "rgba(249, 168, 212, 0.8)",
-    gradientTo: "rgba(109, 40, 217, 0.8)",
+    gradientFrom: "rgba(129, 199, 132, 0.8)",
+    gradientTo: "rgba(27, 94, 32, 0.9)",
     publishedDate: "February 2024"
   },
   {
@@ -108,8 +108,8 @@ Dahil kung si Kristo ang sentro natin,
 Walang unos na kayang gibain.
 Sa bawat dasal at salita ng pananalig,
 Ang puso mo ang tahanan ng pag-ibig.`,
-    gradientFrom: "rgba(109, 40, 217, 0.7)",
-    gradientTo: "rgba(249, 168, 212, 0.7)",
+    gradientFrom: "rgba(67, 160, 71, 0.8)",
+    gradientTo: "rgba(46, 125, 50, 0.9)",
     publishedDate: "February 2024"
   },
   {
@@ -136,8 +136,8 @@ That day you chose to speak your heart,
 You carved your name inside of mine.
 You turned my dusk to sacred art,
 And made the stars themselves align.`,
-    gradientFrom: "rgba(159, 122, 234, 0.7)",
-    gradientTo: "rgba(109, 40, 217, 0.7)",
+    gradientFrom: "rgba(102, 187, 106, 0.8)",
+    gradientTo: "rgba(56, 142, 60, 0.9)",
     publishedDate: "March 2024"
   },
   {
@@ -164,8 +164,8 @@ At kung ito'y panaginip lamang,
 Ayoko nang magising pa kailanman.
 Dahil sa piling mong may pagmamahal,
 Tama ka—ikaw ang aking tahanan.`,
-    gradientFrom: "rgba(249, 168, 212, 0.7)",
-    gradientTo: "rgba(159, 122, 234, 0.7)",
+    gradientFrom: "rgba(46, 125, 50, 0.8)",
+    gradientTo: "rgba(129, 199, 132, 0.9)",
     publishedDate: "March 2024"
   },
   {
@@ -192,8 +192,8 @@ I love you not for just your glow,
 But for the dark you try to hide.
 Nicole, my heart was built to know
 The love in you—the you inside.`,
-    gradientFrom: "rgba(109, 40, 217, 0.6)",
-    gradientTo: "rgba(159, 122, 234, 0.8)",
+    gradientFrom: "rgba(139, 195, 74, 0.8)",
+    gradientTo: "rgba(85, 139, 47, 0.9)",
     publishedDate: "March 2024"
   },
   {
@@ -220,8 +220,8 @@ Kung pwede lang sana ay yakapin ka,
 Sa bawat oras na ako'y gising.
 Sapat na ang iyong mga mata—
 Upang mapawi ang bawat panimdim.`,
-    gradientFrom: "rgba(159, 122, 234, 0.6)",
-    gradientTo: "rgba(249, 168, 212, 0.8)",
+    gradientFrom: "rgba(56, 142, 60, 0.8)",
+    gradientTo: "rgba(129, 199, 132, 0.9)",
     publishedDate: "April 2024"
   },
   {
@@ -248,8 +248,8 @@ Nicole, my dream is not a place—
 It's not a church, nor gown so white.
 It's you beside me, face to face,
 When love has won its final fight.`,
-    gradientFrom: "rgba(249, 168, 212, 0.6)",
-    gradientTo: "rgba(109, 40, 217, 0.6)",
+    gradientFrom: "rgba(76, 175, 80, 0.8)",
+    gradientTo: "rgba(27, 94, 32, 0.9)",
     publishedDate: "April 2024"
   },
   {
@@ -276,8 +276,8 @@ Sexy hindi lang sa tingin, kundi sa diwa,
 Sa bawat kilos mong banayad at buo.
 Ikaw ang awit ng puso kong payapa,
 Ang ganda mong di kayang itago.`,
-    gradientFrom: "rgba(109, 40, 217, 0.5)",
-    gradientTo: "rgba(249, 168, 212, 0.5)",
+    gradientFrom: "rgba(129, 199, 132, 0.8)",
+    gradientTo: "rgba(46, 125, 50, 0.9)",
     publishedDate: "April 2024"
   },
   {
@@ -304,8 +304,8 @@ Nicole, my heart is not a throne,
 But open fields for you to sow.
 If I must kneel to make it known,
 Then let me kneel and let you glow.`,
-    gradientFrom: "rgba(159, 122, 234, 0.5)",
-    gradientTo: "rgba(109, 40, 217, 0.5)",
+    gradientFrom: "rgba(85, 139, 47, 0.8)",
+    gradientTo: "rgba(46, 125, 50, 0.9)",
     publishedDate: "May 2024"
   },
   {
@@ -332,8 +332,8 @@ Hindi lang ikaw ang mahal ko,
 Kundi ang Diyos na bumuo sa atin.
 Maglilingkod tayo habang-buhay,
 Hanggang langit, sabay nating marating.`,
-    gradientFrom: "rgba(249, 168, 212, 0.5)",
-    gradientTo: "rgba(159, 122, 234, 0.5)",
+    gradientFrom: "rgba(56, 142, 60, 0.8)",
+    gradientTo: "rgba(27, 94, 32, 0.9)",
     publishedDate: "May 2024"
   }
 ];

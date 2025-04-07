@@ -1,11 +1,11 @@
 :root {
   --background: #ffffff;
   --foreground: #333333;
-  --primary: #60946b;
-  --primary-dark: #4a7356;
+  --primary: #4CAF50;
+  --primary-dark: #388E3C;
   --accent-red: #a85751;
-  --soft-green: #7fb685;
-  --dark-green: #557c5c;
+  --soft-green: #81C784;
+  --dark-green: #2E7D32;
   --text-dark: #333333;
   --text-medium: #666666;
   --light-beige: #f3efe0;
@@ -17,11 +17,11 @@
 .dark-mode {
   --background: #1a1a1a;
   --foreground: #ffffff;
-  --primary: #5d8d68;
-  --primary-dark: #4a7356;
+  --primary: #4CAF50;
+  --primary-dark: #388E3C;
   --accent-red: #c26b65;
-  --soft-green: #7fb685;
-  --dark-green: #557c5c;
+  --soft-green: #81C784;
+  --dark-green: #2E7D32;
   --text-dark: #e0e0e0;
   --text-medium: #b0b0b0;
   --light-beige: #2a2a2a;
