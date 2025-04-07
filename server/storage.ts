@@ -36,306 +36,328 @@ export class MemStorage implements IStorage {
   private initializePoems() {
     const poemsData: InsertPoem[] = [
       {
-        title: "Whispers of Dawn",
-        author: "Emily Harrison",
+        title: "When Souls Collide",
+        author: "Van Riev",
         content: 
-`Morning light breaks through the window pane,
-Casting shadows of yesterday's dreams.
-A new day beckons with gentle refrain,
-Nothing is ever quite what it seems.
+`In pixel lines our fates aligned,
+A whisper in a digital sea.
+A spark unseen, yet so divine—
+You wrote, and it rewrote me.
 
-The dew-kissed grass shimmers in golden rays,
-Birds announce their presence with joyful song.
-Flowers unfurl in the sun's warm embrace,
-Finding their place where they belong.
+What started in a shadowed screen,
+Became a light that pierced my soul.
+You weren't just lines in code unseen,
+You made my half at last feel whole.
 
-This moment of peace before the world wakes,
-Holds promises of what's yet to come.
-Every breath that the slumbering earth takes,
-Whispers secrets to those listening some.
+Through usernames and text replies,
+The world grew wide yet small with you.
+In roleplay worlds and silent cries,
+You brought me something real and true.
 
-In this quiet dawn, I find my solace,
-A brief respite from life's endless race.`,
+And when the mask of make-believe
+Gave way to hearts without disguise,
+The love I dared not to conceive
+Was shining in your earthly eyes.`,
         gradientFrom: "rgba(109, 40, 217, 0.8)",
         gradientTo: "rgba(159, 122, 234, 0.8)",
-        publishedDate: "May 2023"
+        publishedDate: "January 2024"
       },
       {
-        title: "Autumn Leaves",
-        author: "Marcus Chen",
+        title: "Unang Usap, Pusong Lumipad",
+        author: "Van Riev",
         content: 
-`Crimson and gold flutter down,
-Dancing with the wind's gentle sigh.
-Nature's confetti covers the ground,
-As summer's memories slowly die.
+`Sa bawat mensahe mong ibinubulong,
+Parang awit sa gabi ng unos.
+Ang puso kong dati'y pagod at kulong,
+Ngayo'y malaya, puno ng rosas at rosas.
 
-Each leaf a story of sun-drenched days,
-Now released to join earth's embrace.
-The tree stands tall in stoic grace,
-Preparing for winter's cold face.
+Tila musika ang iyong mga tanong,
+May halong lambing at pananabik.
+Ang damdamin ko'y unti-unting sumabog,
+Sa bawat titig mong dumidikit.
 
-I gather handfuls of these fallen stars,
-Their crisp texture crumbling between fingers.
-The scent of decay and renewal lingers,
-As seasons change without any bars.
+Ang mga salita'y tila dasal,
+Na galing sa langit, pino at banal.
+Pagmamahalan natin, di aksidente—
+Kundi plano ng Diyos na walang kapantay.
 
-In this moment of transition and loss,
-I find beauty in what was and what will be.`,
+Hanggang ngayo'y tandang-tanda ko pa,
+Unang pagtawag, unang tawa,
+Sa piling mo, lahat ay nag-iba—
+Dahil sa 'yo, ang mundo ko'y payapa.`,
         gradientFrom: "rgba(159, 122, 234, 0.8)",
         gradientTo: "rgba(249, 168, 212, 0.8)",
-        publishedDate: "October 2023"
+        publishedDate: "January 2024"
       },
       {
-        title: "Ocean's Memory",
-        author: "Sophia Williams",
+        title: "Depth Measured in Silence",
+        author: "Van Riev",
         content: 
-`Waves crash against the shore,
-Echoing stories of distant lands.
-Ancient rhythms at the ocean's core,
-Writing messages in the sands.
+`We spoke beyond the spoken word,
+Where silence held a sacred place.
+Each gaze, each pause, each smile unheard—
+Wove heaven's thread in time and space.
 
-Salt spray kisses my weathered cheeks,
-As I stand at the edge of two worlds.
-The sea holds secrets it never speaks,
-As its mysteries slowly unfurl.
+Our talks turned deep, like rivers wide,
+With currents dark, yet flowing warm.
+Your heart became my trusted guide,
+A quiet truth in every storm.
 
-How many souls have stood as I do now,
-Gazing into the infinite blue?
-The ocean remembers each solemn vow,
-And carries them through and through.
+You asked me things I feared to know,
+Yet safe I felt beneath your stare.
+Like autumn winds that gently blow,
+You stripped me bare, but with care.
 
-I am but a moment in its timeless dance,
-Yet it shares its wisdom with just one glance.`,
+And so we grew—no haste, no race—
+But constant as the moonlit tide.
+Time did not dull, but gave us grace—
+To know, to trust, to never hide.`,
         gradientFrom: "rgba(249, 168, 212, 0.8)",
         gradientTo: "rgba(109, 40, 217, 0.8)",
-        publishedDate: "July 2023"
+        publishedDate: "February 2024"
       },
       {
-        title: "Midnight Thoughts",
-        author: "James Rivera",
+        title: "Ugnayang Maka-Diyos",
+        author: "Van Riev",
         content: 
-`In the quiet hours when the world sleeps,
-My mind wanders through forgotten paths.
-Shadows grow longer as night creeps,
-Illuminating truths in aftermath.
+`Di lang puso ang pinagtagpo,
+Kundi mga kaluluwang may layunin.
+Pag-ibig nating ito'y regalo,
+Banal na plano, hindi sapalarin.
 
-Clock ticks echo in the darkened room,
-Counting moments of solitary peace.
-Thoughts bloom in midnight's gentle womb,
-Finding expression and release.
+Sa panalangin ko'y ika'y dumating,
+Tulad ng tala sa gabi ng dilim.
+Hindi aksidente, kundi pagpapala,
+Pag-ibig natin ay sa Diyos nagmula.
 
-Questions without answers float like dust,
-In moonlight streaming through the blinds.
-Dreams and memories gather rust,
-As I sift through the corners of my mind.
+Nagkakilala tayo hindi lang sa mundo,
+Kundi sa presensya ng Espiritu.
+Ikaw ang sagot sa dasal kong totoo—
+Isang gabay, isang katuwang sa takbo.
 
-This nocturnal clarity feels like a gift,
-A secret dialogue with my inner self.`,
+Dahil kung si Kristo ang sentro natin,
+Walang unos na kayang gibain.
+Sa bawat dasal at salita ng pananalig,
+Ang puso mo ang tahanan ng pag-ibig.`,
         gradientFrom: "rgba(109, 40, 217, 0.7)",
         gradientTo: "rgba(249, 168, 212, 0.7)",
-        publishedDate: "June 2023"
+        publishedDate: "February 2024"
       },
       {
-        title: "Mountain Song",
-        author: "Elena Frost",
+        title: "When You First Said It",
+        author: "Van Riev",
         content: 
-`Peaks reaching toward heaven,
-Ancient and wise, standing guard.
-Valleys nestled between like islands,
-Their beauty rugged and hard.
+`You said it like a candle lit—
+Soft, unsure, but warm with flame.
+The air stood still; I tasted it—
+The moment when you spoke my name.
 
-Wind howls through craggy passages,
-Singing songs as old as time.
-Snow caps glisten in sunlight,
-Like diamonds worth not a dime.
+Three simple words, but thunder roared
+Within my chest, too loud to tame.
+Your voice became the holy chord
+That made my world no longer same.
 
-I scale these mighty sentinels,
-My breath forming clouds in the air.
-Each step brings clarity of purpose,
-Each view removes a layer of care.
+You said it not in grand parade,
+But in a hush that shook my spine.
+And from that whisper, love was made—
+A vow that felt like God's design.
 
-The mountain does not judge or question,
-It simply exists in stoic grace.
-Teaching me to stand tall against storms,
-And face life with steady pace.`,
+That day you chose to speak your heart,
+You carved your name inside of mine.
+You turned my dusk to sacred art,
+And made the stars themselves align.`,
         gradientFrom: "rgba(159, 122, 234, 0.7)",
         gradientTo: "rgba(109, 40, 217, 0.7)",
-        publishedDate: "August 2023"
+        publishedDate: "March 2024"
       },
       {
-        title: "City Lights",
-        author: "Michael Torres",
+        title: "Tama sa Lahat ng Paraan",
+        author: "Van Riev",
         content: 
-`Neon glows reflected in rain-soaked streets,
-A thousand stories unfold beneath.
-Urban symphony of discordant beats,
-The city never stops to breathe.
+`Tila may awit sa bawat saglit
+Nang tayo'y nagtagpo sa tamang oras.
+Ang puso ko'y gumaan, naging payapa,
+Parang ulan sa tagtuyot ng lunas.
 
-Skyscrapers puncture the night sky,
-Windows illuminated like stars.
-Taxi horns and distant sirens cry,
-As strangers pass without memoirs.
+Walang tanong kung bakit ikaw,
+Lahat ng sagot ay nasa'yong mata.
+Hindi ito pangkaraniwang pag-ibig—
+Ito'y panatag, totoo, at may sigla.
 
-In this concrete jungle of dreams and despair,
-I find a strange sort of home.
-Anonymous faces everywhere,
-Yet never truly alone.
+Tama ka sa bawat mata kong lumuluha,
+Sa bawat ngiting ngayo'y may saysay.
+Sa 'yo ko nakita ang Diyos na buhay—
+Na sa 'king panalangin, Siya'y tunay.
 
-The pulse of humanity runs through these veins,
-A collective heartbeat in metropolitan refrains.`,
+At kung ito'y panaginip lamang,
+Ayoko nang magising pa kailanman.
+Dahil sa piling mong may pagmamahal,
+Tama ka—ikaw ang aking tahanan.`,
         gradientFrom: "rgba(249, 168, 212, 0.7)",
         gradientTo: "rgba(159, 122, 234, 0.7)",
-        publishedDate: "April 2023"
+        publishedDate: "March 2024"
       },
       {
-        title: "Winter's Embrace",
-        author: "Olivia Johnson",
+        title: "Every Version of You",
+        author: "Van Riev",
         content: 
-`Blankets of white silence the world,
-Crystalline beauty in each frozen breath.
-Tree branches with icicles pearled,
-Nature in temporary death.
+`I love you in the morning light,
+Before the world begins to spin.
+When silence folds around the night,
+You're where my truest thoughts begin.
 
-Footprints mark my solitary path,
-Soon to be covered by falling snow.
-The wind bites with gentle wrath,
-As temperatures continue to drop low.
+I love the way your laughter sounds—
+Like hymns that chase my ghosts away.
+In you, my soul no longer drowns;
+You are my calm, my break of day.
 
-Inside, fire crackles with comforting heat,
-Shadows dance across the wooden floor.
-This seasonal retreat feels bittersweet,
-As I wait behind the closed door.
+I love you when you're strong and wise,
+And when you're lost in fear and doubt.
+In every tear that wets your eyes,
+I find more beauty pouring out.
 
-Winter teaches patience and rest,
-Before spring brings its colorful zest.`,
+I love you not for just your glow,
+But for the dark you try to hide.
+Nicole, my heart was built to know
+The love in you—the you inside.`,
         gradientFrom: "rgba(109, 40, 217, 0.6)",
         gradientTo: "rgba(159, 122, 234, 0.8)",
-        publishedDate: "January 2023"
+        publishedDate: "March 2024"
       },
       {
-        title: "Lost in Time",
-        author: "David Lee",
+        title: "Sa Bawat Segundo, Ikaw",
+        author: "Van Riev",
         content: 
-`Clock hands spin mercilessly forward,
-Memories blurring at the edges.
-Yesterday seems both distant and near,
-Time defies all human pledges.
+`Miss kita sa bawat hinga,
+Sa pagitan ng mga bituin.
+Sa bawat katahimikan ng gabi,
+Ikaw ang sigaw ng damdamin.
 
-Faded photographs in dusty albums,
-Moments captured but slowly fading.
-Faces once familiar now seem strange,
-As years keep steadily cascading.
+Miss kita sa bawat 'di ko masabi,
+Na sana'y ikaw ang kayakap.
+Ang puso kong dati'y buo at matibay,
+Ngayon ay nananabik, nanghihina't gapang.
 
-I try to grasp each precious second,
-Only to watch them slip through fingers.
-The bittersweet taste of nostalgia lingers,
-While future moments remain unbeckoned.
+Wala ka man sa aking tabi,
+Ang alaala mo'y walang humpay.
+Pilit kong inaarok ang gabi—
+Nangungulila, umiiyak ng sabay.
 
-In this perpetual flow of moments passing,
-I learn to cherish what is, not what was.`,
+Kung pwede lang sana ay yakapin ka,
+Sa bawat oras na ako'y gising.
+Sapat na ang iyong mga mata—
+Upang mapawi ang bawat panimdim.`,
         gradientFrom: "rgba(159, 122, 234, 0.6)",
         gradientTo: "rgba(249, 168, 212, 0.8)",
-        publishedDate: "September 2023"
+        publishedDate: "April 2024"
       },
       {
-        title: "Garden of Dreams",
-        author: "Amara Singh",
+        title: "One Last Name",
+        author: "Van Riev",
         content: 
-`Vibrant blooms reach for the sun,
-Roots intertwined beneath the soil.
-A tapestry of colors becomes undone,
-As seasons change with nature's toil.
+`I dream of days with quiet grace,
+Where "Mrs. Aquino" is your name.
+Where vows are more than spoken trace—
+They're carved in time, in sacred flame.
 
-I plant seeds of hope in fertile ground,
-Nurturing them with patience and care.
-Some flourish while others aren't found,
-Life's uncertainty beyond compare.
+I see us build a little home,
+With laughter in the kitchen air.
+A garden where our children roam,
+And prayers that rise like morning prayer.
 
-Butterflies dance from flower to flower,
-Pollinators in this sanctuary I've made.
-Each petal unfurls with quiet power,
-Displaying patterns expertly laid.
+I dream of rings that time won't rust,
+Of nights we spend with fingers twined.
+Of growing old through love and trust—
+With you, forever's not confined.
 
-This garden mirrors my inner landscape,
-Wild and ordered, dying and reborn.`,
+Nicole, my dream is not a place—
+It's not a church, nor gown so white.
+It's you beside me, face to face,
+When love has won its final fight.`,
         gradientFrom: "rgba(249, 168, 212, 0.6)",
         gradientTo: "rgba(109, 40, 217, 0.6)",
-        publishedDate: "March 2023"
+        publishedDate: "April 2024"
       },
       {
-        title: "Stargazer",
-        author: "Leo Martinez",
+        title: "Pambihirang Ganda",
+        author: "Van Riev",
         content: 
-`Celestial bodies paint stories across the night canvas,
-Ancient light guiding lost souls.
-Constellations connect in cosmic choreography,
-As the universe slowly unrolls.
+`Sa bawat ngiti mong kay tamis,
+Parang araw sa ulap ng lungkot.
+Ang kutis mong tila porselanang bituin—
+Sa 'king paningin, ikaw ang sagot.
 
-I lie on cool grass, neck craned upward,
-Searching for patterns in distant suns.
-The vastness above both humbles and inspires,
-As my imagination runs.
+'Pag ikaw ay ngumiti, bumabagal ang mundo,
+Parang sining sa oras ng gulo.
+At sa kilos mong puno ng lambing,
+Puso ko'y naglalakbay sa alapaap na ginto.
 
-How small we are in this grand design,
-Yet how wondrous to witness its display.
-Each twinkling star a reminder divine,
-Of worlds beyond our everyday.
+Maging ang iyong pagkibit-balikat,
+Ay para bang tula sa gabi ng buwan.
+Nakakabighani, walang kapantay—
+Isang obra maestra ng Maykapal.
 
-The night sky holds answers to questions unasked,
-In its infinite, sparkling mask.`,
+Sexy hindi lang sa tingin, kundi sa diwa,
+Sa bawat kilos mong banayad at buo.
+Ikaw ang awit ng puso kong payapa,
+Ang ganda mong di kayang itago.`,
         gradientFrom: "rgba(109, 40, 217, 0.5)",
         gradientTo: "rgba(249, 168, 212, 0.5)",
-        publishedDate: "November 2023"
+        publishedDate: "April 2024"
       },
       {
-        title: "Echoes of You",
-        author: "Nora Patel",
+        title: "To Serve and Surrender",
+        author: "Van Riev",
         content: 
-`Your laughter still bounces off these walls,
-A phantom presence in empty rooms.
-I reach for memories as daylight falls,
-Finding only shadows and lingering perfumes.
+`I do not lead in every way,
+Nor claim to rule this gentle land.
+For love is not who dares to stay,
+But who kneels low and holds your hand.
 
-The space you occupied remains unfilled,
-Though time has passed since your departure.
-Conversations replay, never stilled,
-Your absence an unfinished aperture.
+I find my strength in yielding peace,
+In letting you define the pace.
+To trust your voice, and find release
+In knowing I am in your grace.
 
-I see you in strangers on busy streets,
-A familiar gesture, the tilt of a head.
-My heart races with momentary beats,
-Before reality returns instead.
+I'd gladly rest beneath your reign,
+Not out of weakness—but of love.
+For even kings lay down their chain
+To lift the one they're dreaming of.
 
-These echoes of you fade slower than I thought,
-Love's resonance cannot be easily caught.`,
+Nicole, my heart is not a throne,
+But open fields for you to sow.
+If I must kneel to make it known,
+Then let me kneel and let you glow.`,
         gradientFrom: "rgba(159, 122, 234, 0.5)",
         gradientTo: "rgba(109, 40, 217, 0.5)",
-        publishedDate: "February 2023"
+        publishedDate: "May 2024"
       },
       {
-        title: "Freedom's Call",
-        author: "Thomas Wright",
+        title: "Magkasamang Naglilingkod",
+        author: "Van Riev",
         content: 
-`Wings spread against azure skies,
-Soaring above limitations and boundaries.
-The wind carries dreams as it flies,
-Beyond horizon's furthest foundries.
+`Sa simbahan, magkatabi tayo,
+Mga kamay nating magkahawak.
+Nagdarasal, kumakanta sa iisang puso—
+Paglilingkod nating di matitinag.
 
-Chains of doubt and fear fall away,
-As courage lifts the spirit higher.
-Liberation found in break of day,
-Inner strength a constant fire.
+Ikaw at ako, mga lingkod Niya,
+Sa bawat salita't gawa, may saysay.
+Tulad ng ilaw sa gabi ng problema,
+Pag-ibig Niya'y ating gabay.
 
-I stand at the edge of what could be,
-Toes curled over precipice of change.
-The leap required to truly be free,
-Requires leaving comfort's range.
+Magsasama sa bawat misyon,
+Maging tagapagturo o tagapangalaga.
+Sa mata ng Diyos, tayo'y isa—
+Nag-aalay ng buhay na may halaga.
 
-Freedom calls with siren song,
-To those brave enough to belong.`,
+Hindi lang ikaw ang mahal ko,
+Kundi ang Diyos na bumuo sa atin.
+Maglilingkod tayo habang-buhay,
+Hanggang langit, sabay nating marating.`,
         gradientFrom: "rgba(249, 168, 212, 0.5)",
         gradientTo: "rgba(159, 122, 234, 0.5)",
-        publishedDate: "December 2023"
+        publishedDate: "May 2024"
       }
     ];
 
