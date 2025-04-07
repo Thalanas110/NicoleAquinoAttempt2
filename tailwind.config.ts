@@ -61,6 +61,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom colors from the image
+        'soft-green': "hsl(var(--soft-green))",
+        'light-beige': "hsl(var(--light-beige))",
+        'warm-white': "hsl(var(--warm-white))",
+        'accent-red': "hsl(var(--accent-red))",
+        'dark-green': "hsl(var(--dark-green))",
+        'light-gray': "hsl(var(--light-gray))",
+        'medium-gray': "hsl(var(--medium-gray))",
+        'text-dark': "hsl(var(--text-dark))",
+        'text-medium': "hsl(var(--text-medium))",
       },
       keyframes: {
         "accordion-down": {

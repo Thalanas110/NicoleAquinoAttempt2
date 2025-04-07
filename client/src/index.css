@@ -3,11 +3,58 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --soft-green: 143 42% 42%;
+    --light-beige: 48 20% 88%;
+    --warm-white: 60 10% 96%;
+    --accent-red: 0 80% 50%;
+    --dark-green: 143 30% 30%;
+    --light-gray: 0 0% 95%;
+    --medium-gray: 0 0% 80%;
+    --text-dark: 0 0% 15%;
+    --text-medium: 0 0% 40%;
+  }
+
   * {
     @apply border-border;
   }
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    background-image: url('./assets/1221685.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .content-overlay {
+    @apply bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm;
+  }
+  
+  .poem-card {
+    @apply bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm transition-all duration-300;
+  }
+  
+  .poem-card:hover {
+    @apply shadow-lg transform -translate-y-1;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
   }
 }

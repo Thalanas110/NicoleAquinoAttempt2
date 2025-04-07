@@ -13,18 +13,18 @@ export default function PoemDetail() {
 
   if (isLoading) {
     return (
-      <div className="max-w-3xl mx-auto animate-slide-up">
+      <div className="max-w-3xl mx-auto px-4 py-8 animate-slide-up">
         <Button 
           variant="ghost" 
-          className="mb-6 flex items-center text-primary hover:text-primary/80 transition-colors focus:outline-none group"
+          className="mb-6 flex items-center text-soft-green hover:text-soft-green/80 transition-colors focus:outline-none group"
           disabled
         >
           <ArrowLeft className="h-5 w-5 mr-2" />
           Back to Collection
         </Button>
 
-        <Card className="bg-white dark:bg-gray-800 rounded-xl shadow-md">
-          <CardHeader className="mb-4 pb-4 border-b border-neutral">
+        <Card className="content-overlay rounded-xl shadow-lg">
+          <CardHeader className="mb-4 pb-4 border-b border-light-beige">
             <Skeleton className="h-10 w-3/4 mb-3" />
             <Skeleton className="h-6 w-1/3" />
           </CardHeader>
@@ -38,7 +38,7 @@ export default function PoemDetail() {
               <Skeleton className="h-5 w-full" />
             </div>
           </CardContent>
-          <CardFooter className="flex flex-col items-start mt-6 pt-4 border-t border-neutral">
+          <CardFooter className="flex flex-col items-start mt-6 pt-4 border-t border-light-beige">
             <Skeleton className="h-5 w-1/2 mb-2" />
             <Skeleton className="h-5 w-1/3" />
           </CardFooter>
@@ -49,23 +49,28 @@ export default function PoemDetail() {
 
   if (error || !poem) {
     return (
-      <div className="max-w-3xl mx-auto animate-slide-up">
+      <div className="max-w-3xl mx-auto px-4 py-8 animate-slide-up">
         <Link href="/">
           <Button 
             variant="ghost" 
-            className="mb-6 flex items-center text-primary hover:text-primary/80 transition-colors focus:outline-none group"
+            className="mb-6 flex items-center text-soft-green hover:text-dark-green transition-colors focus:outline-none group"
           >
             <ArrowLeft className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />
             Back to Collection
           </Button>
         </Link>
 
-        <Card className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 md:p-8">
+        <Card className="content-overlay rounded-xl shadow-lg p-6 md:p-8">
           <div className="text-center py-10">
-            <h2 className="text-2xl font-medium text-red-600 mb-4">Error Loading Poem</h2>
-            <p className="text-text-medium dark:text-gray-300">
+            <h2 className="text-2xl font-medium text-accent-red mb-4">Error Loading Poem</h2>
+            <p className="text-text-medium dark:text-gray-300 mb-6">
               {error instanceof Error ? error.message : "This poem could not be found or has been removed."}
             </p>
+            <Link href="/">
+              <Button className="bg-soft-green hover:bg-dark-green text-white px-6 py-2 rounded-md transition-colors">
+                Return to Collection
+              </Button>
+            </Link>
           </div>
         </Card>
       </div>
@@ -73,30 +78,34 @@ export default function PoemDetail() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto animate-slide-up">
+    <div className="max-w-3xl mx-auto px-4 py-8 animate-slide-up">
       <Link href="/">
         <Button 
           variant="ghost" 
-          className="mb-6 flex items-center text-primary hover:text-primary/80 transition-colors focus:outline-none group"
+          className="mb-6 flex items-center text-soft-green hover:text-dark-green transition-colors focus:outline-none group"
         >
           <ArrowLeft className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />
           Back to Collection
         </Button>
       </Link>
 
-      <Card className="bg-white dark:bg-gray-800 rounded-xl shadow-md">
-        <CardHeader className="mb-4 pb-4 border-b border-neutral">
-          <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-3">{poem.title}</h2>
-          <p className="text-text-medium dark:text-gray-300">By {poem.author}</p>
+      <Card className="content-overlay rounded-xl shadow-lg">
+        <CardHeader className="mb-4 pb-4 border-b border-light-beige">
+          <h2 className="text-3xl md:text-4xl font-semibold text-soft-green mb-3">{poem.title}</h2>
+          <p className="text-accent-red font-medium">By {poem.author}</p>
         </CardHeader>
         <CardContent>
-          <div className="poem-content text-lg leading-relaxed font-light dark:text-gray-200 whitespace-pre-line">
-            {poem.content}
+          <div className="poem-content text-lg leading-relaxed text-text-dark dark:text-gray-200 whitespace-pre-line">
+            {poem.content.split('\n').map((line, index) => (
+              <p key={index} className={line.trim() === '' ? 'my-4' : 'mb-2'}>
+                {line}
+              </p>
+            ))}
           </div>
         </CardContent>
-        <CardFooter className="flex flex-col items-start mt-6 pt-4 border-t border-neutral">
+        <CardFooter className="flex flex-col items-start mt-6 pt-4 border-t border-light-beige">
           <p className="text-text-medium dark:text-gray-300 text-sm">From the collection "Operation Nicole Aquino"</p>
-          <p className="mt-2 text-text-medium dark:text-gray-300 text-sm">Published: {poem.publishedDate}</p>
+          <p className="mt-2 text-soft-green dark:text-soft-green text-sm font-medium">Published: {poem.publishedDate}</p>
         </CardFooter>
       </Card>
     </div>

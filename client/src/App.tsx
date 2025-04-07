@@ -30,11 +30,13 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className={`min-h-screen font-poppins ${isDarkMode ? 'dark' : ''}`}>
-        <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-        <main className="container mx-auto px-4 py-8 md:px-8 min-h-[calc(100vh-200px)]">
-          <Router />
-        </main>
-        <Footer />
+        <div className="relative z-10">
+          <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+          <main className="container mx-auto py-8 min-h-[calc(100vh-200px)]">
+            <Router />
+          </main>
+          <Footer />
+        </div>
       </div>
       <Toaster />
     </QueryClientProvider>
