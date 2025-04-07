@@ -91,21 +91,27 @@ export default function PoemDetail() {
 
       <Card className="content-overlay rounded-xl shadow-lg">
         <CardHeader className="mb-4 pb-4 border-b border-light-beige">
-          <h2 className="text-3xl md:text-4xl font-semibold text-soft-green mb-3">{poem.title}</h2>
-          <p className="text-accent-red font-medium">By {poem.author}</p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-soft-green mb-3">{poem?.title || 'Untitled'}</h2>
+          <p className="text-accent-red font-medium">By {poem?.author || 'Unknown'}</p>
         </CardHeader>
         <CardContent>
           <div className="poem-content text-lg leading-relaxed text-text-dark dark:text-gray-200 whitespace-pre-line">
-            {poem.content.split('\n').map((line, index) => (
-              <p key={index} className={line.trim() === '' ? 'my-4' : 'mb-2'}>
-                {line}
-              </p>
-            ))}
+            {poem?.content ? (
+              poem.content.split('\n').map((line, index) => (
+                <p key={index} className={line.trim() === '' ? 'my-4' : 'mb-2'}>
+                  {line}
+                </p>
+              ))
+            ) : (
+              <p>No content available</p>
+            )}
           </div>
         </CardContent>
         <CardFooter className="flex flex-col items-start mt-6 pt-4 border-t border-light-beige">
           <p className="text-text-medium dark:text-gray-300 text-sm">From the collection "Operation Nicole Aquino"</p>
-          <p className="mt-2 text-soft-green dark:text-soft-green text-sm font-medium">Published: {poem.publishedDate}</p>
+          <p className="mt-2 text-soft-green dark:text-soft-green text-sm font-medium">
+            Published: {poem?.publishedDate || 'Unknown date'}
+          </p>
         </CardFooter>
       </Card>
     </div>

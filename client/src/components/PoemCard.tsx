@@ -34,7 +34,7 @@ export default function PoemCard({ poem }: PoemCardProps) {
             <span>{poem.author}</span>
           </p>
           <p className="text-text-dark dark:text-gray-200 line-clamp-3 flex-1">
-            {poem.content.split('\n')[0]}...
+            {poem.content ? `${poem.content.split('\n')[0]}...` : ''}
           </p>
           <div className="mt-3 text-soft-green flex items-center text-sm font-medium">
             <BookOpen className="h-4 w-4 mr-1" />
