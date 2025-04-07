@@ -1,9 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import type { Poem } from "@shared/schema";
+import { poems } from "./poemData";
 
 export function useAllPoems() {
   return useQuery<Poem[]>({
     queryKey: ['/api/poems'],
+    queryFn: () => Promise.resolve(poems),
   });
 }
 
@@ -11,17 +13,12 @@ export function usePoemById(id: number | undefined) {
   return useQuery<Poem>({
     queryKey: [`/api/poems/${id}`],
     enabled: !!id,
-    queryFn: async ({ queryKey }) => {
-      const url = queryKey[0] as string;
-      const response = await fetch(url, {
-        credentials: "include",
-      });
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch poem');
+    queryFn: () => {
+      const poem = poems.find(p => p.id === id);
+      if (!poem) {
+        throw new Error(`Poem with id ${id} not found`);
       }
-      
-      return response.json();
+      return Promise.resolve(poem);
     }
   });
 }

@@ -11,10 +11,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Serve the background image for the vanilla version
   app.use("/attached_assets", express.static(path.resolve(process.cwd(), "attached_assets")));
   
-  // Redirect root to vanilla version
-  app.get("/", (req, res) => {
-    res.redirect("/vanilla");
-  });
+  // Keep the root as the React version now
+  // app.get("/", (req, res) => {
+  //   res.redirect("/vanilla");
+  // });
 
   // API routes
   app.get("/api/poems", async (req, res) => {

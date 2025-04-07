@@ -8,10 +8,14 @@ interface PoemCardProps {
 }
 
 export default function PoemCard({ poem }: PoemCardProps) {
-  // Generate a gradient color based on the poem id for consistency
-  const getGradientColors = (id: number) => {
-    // Using the id to generate consistent colors
-    const baseHue = (id * 25) % 360;
+  // Use the poem's gradient colors from the schema or fall back to a generated gradient
+  const getGradientColors = () => {
+    if (poem.gradientFrom && poem.gradientTo) {
+      return `linear-gradient(135deg, ${poem.gradientFrom}, ${poem.gradientTo})`;
+    }
+    
+    // Fallback gradient if the properties are missing
+    const baseHue = (poem.id * 25) % 360;
     const startColor = `hsl(${baseHue}, 70%, 85%)`;
     const endColor = `hsl(var(--soft-green))`;
     return `linear-gradient(135deg, ${startColor}, ${endColor})`;
@@ -23,7 +27,7 @@ export default function PoemCard({ poem }: PoemCardProps) {
         <div 
           className="h-40 flex items-end p-4 relative" 
           style={{ 
-            background: getGradientColors(poem.id)
+            background: getGradientColors()
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
