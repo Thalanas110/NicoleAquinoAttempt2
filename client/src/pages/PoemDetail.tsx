@@ -15,9 +15,10 @@ export default function PoemDetail() {
     return (
       <div className="max-w-3xl mx-auto px-4 py-8 animate-slide-up">
         <Button 
-          variant="ghost" 
-          className="mb-6 flex items-center text-soft-green hover:text-soft-green/80 transition-colors focus:outline-none group"
+          variant="default" 
+          className="mb-6 flex items-center bg-soft-green/70 text-white shadow-md transition-all focus:outline-none opacity-70 cursor-not-allowed"
           disabled
+          size="lg"
         >
           <ArrowLeft className="h-5 w-5 mr-2" />
           Back to Collection
@@ -52,8 +53,9 @@ export default function PoemDetail() {
       <div className="max-w-3xl mx-auto px-4 py-8 animate-slide-up">
         <Link href="/">
           <Button 
-            variant="ghost" 
-            className="mb-6 flex items-center text-soft-green hover:text-dark-green transition-colors focus:outline-none group"
+            variant="default" 
+            className="mb-6 flex items-center bg-soft-green hover:bg-dark-green text-white shadow-md hover:shadow-lg transition-all focus:outline-none group"
+            size="lg"
           >
             <ArrowLeft className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />
             Back to Collection
@@ -67,7 +69,11 @@ export default function PoemDetail() {
               {error instanceof Error ? error.message : "This poem could not be found or has been removed."}
             </p>
             <Link href="/">
-              <Button className="bg-soft-green hover:bg-dark-green text-white px-6 py-2 rounded-md transition-colors">
+              <Button 
+                variant="default"
+                size="lg" 
+                className="bg-soft-green hover:bg-dark-green text-white shadow-md hover:shadow-lg transition-all"
+              >
                 Return to Collection
               </Button>
             </Link>
@@ -81,8 +87,9 @@ export default function PoemDetail() {
     <div className="max-w-3xl mx-auto px-4 py-8 animate-slide-up">
       <Link href="/">
         <Button 
-          variant="ghost" 
-          className="mb-6 flex items-center text-soft-green hover:text-dark-green transition-colors focus:outline-none group"
+          variant="default" 
+          className="mb-6 flex items-center bg-soft-green hover:bg-dark-green text-white shadow-md hover:shadow-lg transition-all focus:outline-none group"
+          size="lg"
         >
           <ArrowLeft className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />
           Back to Collection
