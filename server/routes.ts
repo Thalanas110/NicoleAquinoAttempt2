@@ -1,8 +1,21 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import path from "path";
+import express from "express";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve the vanilla version at /vanilla
+  app.use("/vanilla", express.static(path.resolve(process.cwd(), "vanilla")));
+  
+  // Serve the background image for the vanilla version
+  app.use("/attached_assets", express.static(path.resolve(process.cwd(), "attached_assets")));
+  
+  // Redirect root to vanilla version
+  app.get("/", (req, res) => {
+    res.redirect("/vanilla");
+  });
+
   // API routes
   app.get("/api/poems", async (req, res) => {
     try {
