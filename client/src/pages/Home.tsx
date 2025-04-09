@@ -52,7 +52,7 @@ export default function Home() {
       <div className="content-overlay p-8 rounded-lg mb-10 text-center max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-soft-green dark:text-soft-green mb-4">Poetry Collection</h1>
         <p className="text-text-medium dark:text-gray-300 max-w-2xl mx-auto text-lg">
-          A curated selection of poems for Nicole Aquino. Select a poem to begin reading.
+          For my babyy, please select a poem to read. Nothing to overthink, just click and read.
         </p>
       </div>
       

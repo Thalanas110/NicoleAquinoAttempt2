@@ -13,7 +13,7 @@ export default function Header({ isDarkMode, toggleTheme }: HeaderProps) {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <h1 className="text-2xl md:text-3xl font-bold text-soft-green dark:text-soft-green cursor-pointer">
-            Operation Nicole Aquino
+            For my babyy Nicole :DD
           </h1>
         </Link>
         <Button 
