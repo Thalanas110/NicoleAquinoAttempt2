@@ -9,7 +9,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useState } from "react";
 // Import the background image
-import backgroundImage from "../src/assets/1221685.jpg";
+import backgroundImage from "./assets/1221685.jpg";
 
 function Router() {
   return (
