@@ -8,8 +8,6 @@ import PoemDetail from "./pages/PoemDetail";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useState } from "react";
-// Import the background image
-import backgroundImage from "./assets/1221685.jpg";
 
 function Router() {
   return (
@@ -34,7 +32,7 @@ function App() {
       <div 
         className={`min-h-screen font-poppins ${isDarkMode ? 'dark' : ''}`}
         style={{
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: `url(/1221685.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
