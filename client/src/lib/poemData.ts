@@ -1,4 +1,13 @@
-import { Poem } from "@shared/schema";
+// Define the Poem interface directly in this file for frontend-only usage
+export interface Poem {
+  id: number;
+  title: string;
+  author: string;
+  content: string;
+  gradientFrom: string;
+  gradientTo: string;
+  publishedDate: string;
+}
 
 export const poems: Poem[] = [
   {

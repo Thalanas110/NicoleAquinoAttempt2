@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import type { Poem } from "@shared/schema";
-import { poems } from "./poemData";
+import { Poem, poems } from "./poemData";
 
 export function useAllPoems() {
   return useQuery<Poem[]>({

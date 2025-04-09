@@ -1,6 +1,6 @@
-import { useAllPoems } from "@/lib/usePoems";
-import PoemCard from "@/components/PoemCard";
-import { Skeleton } from "@/components/ui/skeleton";
+import { useAllPoems } from "../lib/usePoems";
+import PoemCard from "../components/PoemCard";
+import { Skeleton } from "../components/ui/skeleton";
 
 export default function Home() {
   const { data: poems, isLoading, error } = useAllPoems();

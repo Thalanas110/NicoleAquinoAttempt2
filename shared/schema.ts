@@ -1,20 +1,20 @@
-import { pgTable, text, serial, integer } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
-import { z } from "zod";
+// Simple TypeScript interface for poems data
+export interface Poem {
+  id: number;
+  title: string;
+  author: string;
+  content: string;
+  gradientFrom: string;
+  gradientTo: string;
+  publishedDate: string;
+}
 
-export const poems = pgTable("poems", {
-  id: serial("id").primaryKey(),
-  title: text("title").notNull(),
-  author: text("author").notNull(),
-  content: text("content").notNull(),
-  gradientFrom: text("gradient_from").notNull(),
-  gradientTo: text("gradient_to").notNull(),
-  publishedDate: text("published_date").notNull(),
-});
-
-export const insertPoemSchema = createInsertSchema(poems).omit({
-  id: true,
-});
-
-export type InsertPoem = z.infer<typeof insertPoemSchema>;
-export type Poem = typeof poems.$inferSelect;
+// Type without id for creating new poems
+export interface InsertPoem {
+  title: string;
+  author: string;
+  content: string;
+  gradientFrom: string;
+  gradientTo: string;
+  publishedDate: string;
+}

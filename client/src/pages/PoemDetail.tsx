@@ -1,9 +1,9 @@
 import { useRoute, Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
-import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { usePoemById } from "@/lib/usePoems";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Card, CardContent, CardHeader, CardFooter } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { usePoemById } from "../lib/usePoems";
+import { Skeleton } from "../components/ui/skeleton";
 
 export default function PoemDetail() {
   const [match, params] = useRoute<{ id: string }>("/poem/:id");

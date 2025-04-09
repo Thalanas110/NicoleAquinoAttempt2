@@ -1,6 +1,6 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "./ui/card";
 import { Link } from "wouter";
-import type { Poem } from "@shared/schema";
+import type { Poem } from "../lib/poemData";
 import { BookOpen } from "lucide-react";
 
 interface PoemCardProps {
