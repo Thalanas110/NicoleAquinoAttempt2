@@ -1,5 +1,5 @@
-// This is a simple Express server that will serve the static client files
-import express from 'express';
+// This file simply runs the Vite dev server directly
+import { spawn } from 'child_process';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -7,21 +7,31 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const app = express();
-const PORT = Number(process.env.PORT) || 5000;
-
-// Path to the client directory
+// Path to client directory
 const clientDir = join(__dirname, '../client');
 
-// Serve the client files from the client directory
-app.use(express.static(clientDir));
+console.log('Starting the Vite development server...');
+console.log('Client directory:', clientDir);
 
-// For any route, serve index.html (client-side routing)
-app.get('*', (req, res) => {
-  res.sendFile(join(clientDir, 'index.html'));
+// Start the Vite development server
+const viteProcess = spawn('npx', ['vite', '--host', '0.0.0.0', '--port', '5000'], {
+  cwd: clientDir,
+  stdio: 'inherit',
+  shell: true
 });
 
-// Start the server
-const server = app.listen(PORT, () => {
-  console.log(`Server running at http://0.0.0.0:${PORT}`);
+// Error handling
+viteProcess.on('error', (error) => {
+  console.error('Failed to start Vite process:', error);
+  process.exit(1);
 });
+
+// Graceful shutdown
+process.on('SIGINT', () => {
+  console.log('Shutting down Vite server...');
+  viteProcess.kill();
+  process.exit(0);
+});
+
+// Keep the process running
+process.stdin.resume();
